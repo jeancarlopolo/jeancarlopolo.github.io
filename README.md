@@ -15,7 +15,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [ ] Contato
 - [ ] Gerenciamento de estado em MobX
 
-## 📫 Contribuindo para Jean Carlo Polo
+## 📫 Contribuindo
 
 Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
 
