@@ -1,4 +1,6 @@
 import 'package:curriculo/src/stores/tema_atual.dart';
+import 'package:curriculo/src/widgets/botao_tema.dart';
+
 import 'package:flutter/material.dart';
 
 class MobileUI extends StatelessWidget {
@@ -12,7 +14,11 @@ class MobileUI extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Mobile'),
       ),
-      body: Container(),
+      body: Center(
+        child: BotaoTema(
+          temaStore: temaStore,
+        ),
+      ),
     );
   }
 }

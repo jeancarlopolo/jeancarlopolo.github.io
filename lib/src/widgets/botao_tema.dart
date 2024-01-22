@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
+// o stateful widget é pra gerenciar o ticker, não consegui fazer só usando o mobx
 class BotaoTema extends StatefulWidget {
   const BotaoTema(
       {super.key, this.width, this.height, required this.temaStore});
@@ -17,7 +18,7 @@ class BotaoTema extends StatefulWidget {
 
 class _BotaoTemaState extends State<BotaoTema>
     with SingleTickerProviderStateMixin {
-  final animacaoStore = AnimacaoBotaoTema();
+  static final animacaoStore = AnimacaoBotaoTema();
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +47,8 @@ class _BotaoTemaState extends State<BotaoTema>
         ),
       ),
       onTap: () {
-        if (animacaoStore.controller!.value == 80 / 134 || animacaoStore.controller!.velocity > 0) {
+        if (animacaoStore.controller!.value == 80 / 134 ||
+            animacaoStore.controller!.velocity > 0) {
           animacaoStore.ficarClaro();
         } else {
           animacaoStore.ficarEscuro();

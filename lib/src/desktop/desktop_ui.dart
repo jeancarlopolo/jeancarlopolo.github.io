@@ -13,7 +13,11 @@ class DesktopUI extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Desktop'),
       ),
-      body: Center(child: BotaoTema(temaStore: temaStore)),
+      body: Center(
+        child: BotaoTema(
+          temaStore: temaStore,
+        ),
+      ),
     );
   }
 }

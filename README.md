@@ -11,7 +11,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
     - [ ] Versão mobile
     - [ ] Versão desktop
 - [x] Interface responsiva
-- [ ] Carregamento
+- [x] Carregamento
 - [ ] Contato
 - [ ] Gerenciamento de estado em MobX
 

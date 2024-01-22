@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 void main() {
   final temaStore = TemaAtual();
-  runApp(Aplicativo(
-    temaStore: temaStore,
-  ));
+  runApp(
+    Aplicativo(temaStore: temaStore),
+  );
 }
