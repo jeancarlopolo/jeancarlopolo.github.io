@@ -1,16 +1,29 @@
-# curriculo
+# Jean Carlo Polo
 
-A new Flutter project.
+> Este é meu site pessoal, com informações públicas sobre mim.
 
-## Getting Started
+### Ajustes e melhorias
 
-This project is a starting point for a Flutter application.
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
-A few resources to get you started if this is your first Flutter project:
+- [x] Botão de mudar o tema
+- [ ] Páginas para cada parte do portfólio (educação, experiência, currículo, competências)
+    - [ ] Versão mobile
+    - [ ] Versão desktop
+- [x] Interface responsiva
+- [ ] Carregamento
+- [ ] Contato
+- [ ] Gerenciamento de estado em MobX
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📫 Contribuindo para Jean Carlo Polo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Quer fazer parte desse projeto? Clique [AQUI](CONTRIBUTING.md) e leia como contribuir.
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+
+## 👨‍💻 Desenvolvido por
+
+Jean Carlo Polo
+[@jeancarlopolo](https://github.com/jeancarlopolo)
