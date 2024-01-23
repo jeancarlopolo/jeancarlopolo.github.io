@@ -17,13 +17,20 @@ class Aplicativo extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData.from(
           colorScheme: const ColorScheme.light(
-            background: offwhite,
+            primary: claroBackground,
+            background: claroBackground,
+            
+            onBackground: claroHighlight,
+            secondary: claroHighlight,
           ),
           useMaterial3: true,
         ),
         darkTheme: ThemeData.from(
           colorScheme: const ColorScheme.dark(
-            background: roxo,
+            primary: escuroBackground,
+            background: escuroBackground,
+            onBackground: escuroHighlight,
+            secondary: escuroHighlight,
           ),
           useMaterial3: true,
         ),
