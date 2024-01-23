@@ -1,3 +1,4 @@
+import 'package:curriculo/src/constants.dart';
 import 'package:curriculo/src/minha_splash.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
@@ -16,13 +17,13 @@ class Aplicativo extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData.from(
           colorScheme: const ColorScheme.light(
-            background: Color.fromARGB(255, 247, 240, 223),
+            background: offwhite,
           ),
           useMaterial3: true,
         ),
         darkTheme: ThemeData.from(
           colorScheme: const ColorScheme.dark(
-            background: Color.fromARGB(255, 33, 2, 58),
+            background: roxo,
           ),
           useMaterial3: true,
         ),

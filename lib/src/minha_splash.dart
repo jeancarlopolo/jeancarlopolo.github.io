@@ -1,3 +1,4 @@
+import 'package:curriculo/src/constants.dart';
 import 'package:curriculo/src/interface_responsiva.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
@@ -15,9 +16,10 @@ class MinhaSplash extends StatelessWidget {
       splash: Lottie.asset(
         'assets/splash.json',
         repeat: true,
+        frameRate: const FrameRate(60),
       ),
       nextScreen: InterfaceResponsiva(temaStore: temaStore),
-      backgroundColor: const Color.fromARGB(255, 247, 240, 223),
+      backgroundColor: offwhite,
       centered: true,
       pageTransitionType: PageTransitionType.fade,
     );
