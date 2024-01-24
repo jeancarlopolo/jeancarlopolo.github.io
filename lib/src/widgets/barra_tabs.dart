@@ -14,6 +14,7 @@ class BarraTabs extends StatelessWidget {
       builder: (_) => GNav(
         selectedIndex: tabStore.tabAtual,
         activeColor: tema.colorScheme.onBackground,
+        backgroundColor: Colors.transparent,
         gap: 3,
         //ontabchange vai ser pra navegar
         duration: Durations.long1,

@@ -23,6 +23,7 @@ class MinhaSplash extends StatelessWidget {
       centered: true,
       pageTransitionType: PageTransitionType.fade,
       animationDuration: Duration.zero,
+      nextRoute: '/',
     );
   }
 }

@@ -21,7 +21,11 @@
         ".metadata": true,
         "analysis_options.yaml": true,
         "curriculo.iml": true,
-        "pubspec.lock": true
+        "pubspec.lock": true,
+        ".flutter-plugins-dependencies": true,
+        ".flutter-plugins": true,
+        "LICENSE": true,
+        "CONTRIBUTING.md": true
     },
     "hide-files.files": [
         ".dart_tool",
@@ -39,6 +43,10 @@
         ".metadata",
         "analysis_options.yaml",
         "curriculo.iml",
-        "pubspec.lock"
+        "pubspec.lock",
+        ".flutter-plugins-dependencies",
+        ".flutter-plugins",
+        "LICENSE",
+        "CONTRIBUTING.md"
     ]
 }

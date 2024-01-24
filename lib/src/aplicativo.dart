@@ -1,4 +1,6 @@
 import 'package:curriculo/src/constants.dart';
+import 'package:curriculo/src/desktop/pages/sobre.dart';
+import 'package:curriculo/src/interface_responsiva.dart';
 import 'package:curriculo/src/minha_splash.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
@@ -25,10 +27,9 @@ class Aplicativo extends StatelessWidget {
           ),
           textTheme: TextTheme(
             labelLarge: GoogleFonts.raleway(
-              fontWeight: FontWeight.bold,
-              letterSpacing: -0.2,
-              color: claroHighlight
-            ),
+                fontWeight: FontWeight.bold,
+                letterSpacing: -0.2,
+                color: claroHighlight),
           ),
           useMaterial3: true,
         ),
@@ -41,16 +42,20 @@ class Aplicativo extends StatelessWidget {
           ),
           textTheme: TextTheme(
             labelLarge: GoogleFonts.raleway(
-              fontWeight: FontWeight.bold,
-              letterSpacing: -0.2,
-              color: escuroHighlight
-            ),
+                fontWeight: FontWeight.bold,
+                letterSpacing: -0.2,
+                color: escuroHighlight),
           ),
           useMaterial3: true,
         ),
         themeAnimationCurve: Curves.decelerate,
         themeMode: temaStore.atual,
-        home: MinhaSplash(temaStore: temaStore),
+        initialRoute: '/carregando',
+        routes: {
+          '/carregando': (context) => MinhaSplash(temaStore: temaStore),
+          '/': (context) => InterfaceResponsiva(temaStore: temaStore),
+          '/sobre': (context) => const SobreTab(),
+        },
       ),
     );
   }
