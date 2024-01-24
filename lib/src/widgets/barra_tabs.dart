@@ -1,7 +1,6 @@
 import 'package:curriculo/src/stores/gnav_tab_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class BarraTabs extends StatelessWidget {
