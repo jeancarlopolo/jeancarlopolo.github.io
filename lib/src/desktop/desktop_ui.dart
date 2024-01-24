@@ -1,4 +1,4 @@
-import 'package:curriculo/src/desktop/tabs/barra_tabs.dart';
+import 'package:curriculo/src/widgets/barra_tabs.dart';
 import 'package:curriculo/src/desktop/tabs/home.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:curriculo/src/widgets/botao_tema.dart';
@@ -21,6 +21,7 @@ class DesktopUI extends StatelessWidget {
       ),
       body: Column(
         children: [
+          const SizedBox(height: 5,),
           BarraTabs(),
           const Expanded(
             child: HomeTab(),
