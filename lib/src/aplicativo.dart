@@ -1,7 +1,5 @@
 import 'package:curriculo/src/constants.dart';
-import 'package:curriculo/src/desktop/pages/sobre.dart';
 import 'package:curriculo/src/interface_responsiva.dart';
-import 'package:curriculo/src/minha_splash.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -50,12 +48,7 @@ class Aplicativo extends StatelessWidget {
         ),
         themeAnimationCurve: Curves.decelerate,
         themeMode: temaStore.atual,
-        initialRoute: '/carregando',
-        routes: {
-          '/carregando': (context) => MinhaSplash(temaStore: temaStore),
-          '/': (context) => InterfaceResponsiva(temaStore: temaStore),
-          '/sobre': (context) => const SobreTab(),
-        },
+        home: InterfaceResponsiva(temaStore: temaStore),
       ),
     );
   }

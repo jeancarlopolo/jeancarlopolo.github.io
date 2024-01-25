@@ -15,7 +15,6 @@
         "linux": true,
         "macos": true,
         "test": true,
-        "web": true,
         "windows": true,
         ".gitignore": true,
         ".metadata": true,
@@ -25,7 +24,8 @@
         ".flutter-plugins-dependencies": true,
         ".flutter-plugins": true,
         "LICENSE": true,
-        "CONTRIBUTING.md": true
+        "CONTRIBUTING.md": true,
+        "web": true
     },
     "hide-files.files": [
         ".dart_tool",
@@ -37,7 +37,6 @@
         "linux",
         "macos",
         "test",
-        "web",
         "windows",
         ".gitignore",
         ".metadata",
@@ -47,6 +46,7 @@
         ".flutter-plugins-dependencies",
         ".flutter-plugins",
         "LICENSE",
-        "CONTRIBUTING.md"
+        "CONTRIBUTING.md",
+        "web"
     ]
 }
