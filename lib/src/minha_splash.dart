@@ -8,7 +8,7 @@ import 'package:page_transition/page_transition.dart';
 
 class MinhaSplash extends StatelessWidget {
   const MinhaSplash({super.key, required this.temaStore});
-  final TemaAtual temaStore;
+  final TemaStore temaStore;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,6 @@ class MinhaSplash extends StatelessWidget {
       centered: true,
       pageTransitionType: PageTransitionType.fade,
       animationDuration: Duration.zero,
-      nextRoute: '/',
     );
   }
 }

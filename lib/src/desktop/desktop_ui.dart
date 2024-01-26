@@ -13,19 +13,20 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 
 class DesktopUI extends StatelessWidget {
   const DesktopUI({super.key, required this.temaStore});
-  final TemaAtual temaStore;
+  final TemaStore temaStore;
   static final tabStore = GnavTabAtual();
-
-  static const pages = [
-    ExperienciaPage(),
-    FormacaoPage(),
-    SobrePage(),
-    ProjetosPage(),
-    ContatoPage(),
-  ];
 
   @override
   Widget build(BuildContext context) {
+    final pages = [
+      const ExperienciaPage(),
+      const FormacaoPage(),
+      SobrePage(
+        temaStore: temaStore,
+      ),
+      const ProjetosPage(),
+      const ContatoPage(),
+    ];
     return Observer(
       builder: (context) => Scaffold(
         appBar: BarraTabs(

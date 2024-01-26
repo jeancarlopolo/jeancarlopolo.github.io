@@ -9,7 +9,7 @@ class InterfaceResponsiva extends StatelessWidget {
     required this.temaStore,
   });
 
-  final TemaAtual temaStore;
+  final TemaStore temaStore;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class InterfaceResponsiva extends StatelessWidget {
         if (constraints.maxWidth < 600) {
           return MobileUI(temaStore: temaStore);
         } else {
-          return DesktopUI(temaStore: temaStore,);
+          return DesktopUI(temaStore: temaStore);
         }
       },
     );

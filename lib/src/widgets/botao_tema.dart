@@ -10,7 +10,7 @@ class BotaoTema extends StatefulWidget {
   const BotaoTema({super.key, this.height = 200, required this.temaStore});
 
   final double height;
-  final TemaAtual temaStore;
+  final TemaStore temaStore;
 
   @override
   State<BotaoTema> createState() => _BotaoTemaState();

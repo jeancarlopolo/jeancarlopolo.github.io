@@ -1,5 +1,6 @@
 import 'package:curriculo/src/constants.dart';
 import 'package:curriculo/src/interface_responsiva.dart';
+import 'package:curriculo/src/minha_splash.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -8,7 +9,7 @@ import 'package:google_fonts/google_fonts.dart';
 class Aplicativo extends StatelessWidget {
   const Aplicativo({super.key, required this.temaStore});
 
-  final TemaAtual temaStore;
+  final TemaStore temaStore;
 
   @override
   Widget build(BuildContext context) {
@@ -28,6 +29,10 @@ class Aplicativo extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 letterSpacing: -0.2,
                 color: claroHighlight),
+            headlineLarge: GoogleFonts.raleway(
+                fontWeight: FontWeight.bold,
+                letterSpacing: -0.2,
+                color: claroHighlight),
           ),
           useMaterial3: true,
         ),
@@ -43,12 +48,17 @@ class Aplicativo extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 letterSpacing: -0.2,
                 color: escuroHighlight),
+            headlineLarge: GoogleFonts.raleway(
+                fontWeight: FontWeight.bold,
+                letterSpacing: -0.2,
+                color: escuroHighlight),
           ),
           useMaterial3: true,
         ),
         themeAnimationCurve: Curves.easeOut,
         themeMode: temaStore.atual,
         home: InterfaceResponsiva(temaStore: temaStore),
+        //home: MinhaSplash(temaStore: temaStore),
       ),
     );
   }

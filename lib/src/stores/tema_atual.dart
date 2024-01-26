@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobx/mobx.dart';
 part 'tema_atual.g.dart';
 
-class TemaAtual = TemaAtualBase with _$TemaAtual;
+class TemaStore = TemaAtualBase with _$TemaAtual;
 
 abstract class TemaAtualBase with Store {
   @observable

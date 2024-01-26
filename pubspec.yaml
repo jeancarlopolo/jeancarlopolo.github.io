@@ -33,6 +33,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter:
     sdk: flutter
+  flutter_animate: ^4.4.0
   flutter_mobx: ^2.2.0+2
   google_fonts: ^6.1.0
   google_nav_bar: ^5.0.6
@@ -40,6 +41,7 @@ dependencies:
   mobx: ^2.3.0+1
   mobx_codegen: ^2.6.0+1
   page_transition: ^2.1.0
+  typewritertext: ^2.3.1
 
 dev_dependencies:
   flutter_lints: ^3.0.1

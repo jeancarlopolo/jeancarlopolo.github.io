@@ -6,7 +6,7 @@ import 'package:flutter/material.dart';
 class MobileUI extends StatelessWidget {
   const MobileUI({super.key, required this.temaStore});
 
-  final TemaAtual temaStore;
+  final TemaStore temaStore;
 
   @override
   Widget build(BuildContext context) {
