@@ -46,7 +46,7 @@ class Aplicativo extends StatelessWidget {
           ),
           useMaterial3: true,
         ),
-        themeAnimationCurve: Curves.decelerate,
+        themeAnimationCurve: Curves.easeOut,
         themeMode: temaStore.atual,
         home: InterfaceResponsiva(temaStore: temaStore),
       ),
