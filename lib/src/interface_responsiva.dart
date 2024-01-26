@@ -1,5 +1,4 @@
 import 'package:curriculo/src/desktop/desktop_ui.dart';
-import 'package:curriculo/src/desktop/pages/sobre.dart';
 import 'package:curriculo/src/mobile/mobile_ui.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +18,7 @@ class InterfaceResponsiva extends StatelessWidget {
         if (constraints.maxWidth < 600) {
           return MobileUI(temaStore: temaStore);
         } else {
-          return DesktopUI(temaStore: temaStore, telaAtual: const SobreTab(),);
+          return DesktopUI(temaStore: temaStore,);
         }
       },
     );

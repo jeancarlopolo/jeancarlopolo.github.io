@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SobreTab extends StatelessWidget {
-  const SobreTab({super.key});
+class SobrePage extends StatelessWidget {
+  const SobrePage({super.key});
 
   @override
   Widget build(BuildContext context) {

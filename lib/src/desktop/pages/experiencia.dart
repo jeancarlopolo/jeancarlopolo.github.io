@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SobreTab extends StatelessWidget {
-  const SobreTab({super.key});
+class ExperienciaPage extends StatelessWidget {
+  const ExperienciaPage({super.key});
 
   @override
   Widget build(BuildContext context) {

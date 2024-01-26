@@ -4,17 +4,23 @@ import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class BarraTabs extends StatelessWidget implements PreferredSizeWidget {
-  BarraTabs({super.key, required this.tabs});
+  const BarraTabs({
+    super.key,
+    required this.tabs,
+    required this.onTabChange,
+    required this.tabStore,
+  });
 
   final List<GButton> tabs;
+  final void Function(int) onTabChange;
 
-  final tabStore = GnavTabAtual();
+  final GnavTabAtual tabStore;
   @override
   Widget build(BuildContext context) {
     final tema = Theme.of(context);
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.only(top: 5, left: 150, right: 150),
+        padding: const EdgeInsets.only(top: 10, left: 150, right: 150),
         child: Observer(
           builder: (_) => GNav(
             selectedIndex: tabStore.tabAtual,
@@ -22,9 +28,8 @@ class BarraTabs extends StatelessWidget implements PreferredSizeWidget {
             curve: Curves.easeInCubic,
             iconSize: 30,
             backgroundColor: Colors.transparent,
-            tabBackgroundColor: tema.colorScheme.onBackground.withOpacity(0.05),
-            gap: 3,
-        
+            gap: 4,
+            onTabChange: onTabChange,
             //ontabchange vai ser pra navegar
             style: GnavStyle.google,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -37,5 +42,5 @@ class BarraTabs extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(45);
+  Size get preferredSize => const Size.fromHeight(50);
 }
