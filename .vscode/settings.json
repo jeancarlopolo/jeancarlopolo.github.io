@@ -10,7 +10,6 @@
         ".idea": true,
         ".vscode": true,
         "android": true,
-        "build": true,
         "ios": true,
         "linux": true,
         "macos": true,
@@ -25,14 +24,14 @@
         ".flutter-plugins": true,
         "LICENSE": true,
         "CONTRIBUTING.md": true,
-        "web": true
+        "web": true,
+        "build": true
     },
     "hide-files.files": [
         ".dart_tool",
         ".idea",
         ".vscode",
         "android",
-        "build",
         "ios",
         "linux",
         "macos",
@@ -47,6 +46,7 @@
         ".flutter-plugins",
         "LICENSE",
         "CONTRIBUTING.md",
-        "web"
+        "web",
+        "build"
     ]
 }

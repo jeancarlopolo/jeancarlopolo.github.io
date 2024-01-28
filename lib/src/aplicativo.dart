@@ -1,6 +1,6 @@
 import 'package:curriculo/src/constants.dart';
 import 'package:curriculo/src/interface_responsiva.dart';
-import 'package:curriculo/src/minha_splash.dart';
+//import 'package:curriculo/src/minha_splash.dart';
 import 'package:curriculo/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
