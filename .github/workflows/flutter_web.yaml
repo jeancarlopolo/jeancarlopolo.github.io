@@ -31,7 +31,7 @@ jobs:
           git config --global user.email jean.carlo.polo@uel.br
           git config --global user.name tonhao mototaxi
           git status
-          git remote add origin https://${{secrets.token}}github.com/jeancarlopolo/portfolio
+          git remote add origin https://${{secrets.token}}@github.com/jeancarlopolo/portfolio
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
