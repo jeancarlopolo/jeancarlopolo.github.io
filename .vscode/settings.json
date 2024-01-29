@@ -26,8 +26,7 @@
         "CONTRIBUTING.md": true,
         ".github/workflows": true,
         ".github": true,
-        "build": true,
-        "web": true
+        "build": true
     },
     "hide-files.files": [
         ".dart_tool",
@@ -50,7 +49,6 @@
         "CONTRIBUTING.md",
         ".github/workflows",
         ".github",
-        "build",
-        "web"
+        "build"
     ]
 }

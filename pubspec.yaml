@@ -43,6 +43,7 @@ dependencies:
   mobx_codegen: ^2.6.0+1
   page_transition: ^2.1.0
   typewritertext: ^2.3.1
+  url_launcher: ^6.2.4
 
 dev_dependencies:
   flutter_lints: ^3.0.1
@@ -63,6 +64,8 @@ flutter:
     - assets/botao_tema.json
     - assets/splash.json
     - assets/foto_jean.png
+    - assets/icone_linkedin.svg
+    - assets/icone_github.svg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
