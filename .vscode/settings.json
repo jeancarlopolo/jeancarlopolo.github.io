@@ -24,8 +24,6 @@
         ".flutter-plugins": true,
         "LICENSE": true,
         "CONTRIBUTING.md": true,
-        ".github/workflows": true,
-        ".github": true,
         "build": true
     },
     "hide-files.files": [
@@ -47,8 +45,6 @@
         ".flutter-plugins",
         "LICENSE",
         "CONTRIBUTING.md",
-        ".github/workflows",
-        ".github",
         "build"
     ]
 }
