@@ -24,15 +24,14 @@ class SobrePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Flexible(
-          flex: 1,
+        Expanded(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              TextoIntroducao(),
+              const TextoIntroducao(),
               Container(
                 alignment: Alignment.center,
                 height: 50,
@@ -52,7 +51,8 @@ class SobrePage extends StatelessWidget {
                               duration: 1.seconds,
                               delay: (index + 3).seconds)
                           .fadeIn(
-                              duration: 1.seconds, delay: (index + 3).seconds),
+                              duration: 1.seconds,
+                              delay: (index * 0.7 + 3.5).seconds),
                     );
                   },
                 ),
@@ -60,22 +60,20 @@ class SobrePage extends StatelessWidget {
             ],
           ),
         ),
-        Flexible(
-          flex: 2,
-          child: Padding(
-            padding: const EdgeInsets.all(8),
+        Expanded(
+          child: Container(
+            margin: const EdgeInsets.symmetric(vertical: 100, horizontal: 25),
             child: Image.asset(
               'assets/foto_jean.png',
+              fit: BoxFit.contain,
             )
                 .animate()
                 .slideX(
                     begin: 5,
                     end: 0,
                     curve: Curves.easeOutCubic,
-                    duration: const Duration(seconds: 3))
-                .fadeIn(
-                    delay: const Duration(milliseconds: 2500),
-                    duration: const Duration(seconds: 2)),
+                    duration: 4.seconds)
+                .fadeIn(delay: 3.seconds, duration: 2.seconds),
           ),
         )
       ],

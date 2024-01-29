@@ -30,13 +30,13 @@ class Aplicativo extends StatelessWidget {
               letterSpacing: -0.2,
               color: claroHighlight,
             ),
-            headlineLarge: GoogleFonts.raleway(
+            displayMedium: GoogleFonts.raleway(
               fontWeight: FontWeight.bold,
               letterSpacing: -0.2,
               color: claroHighlight,
             ),
-            bodyLarge: GoogleFonts.raleway(
-              fontWeight: FontWeight.w600,
+            headlineMedium: GoogleFonts.raleway(
+              fontWeight: FontWeight.w500,
               letterSpacing: -0.2,
               color: claroHighlight,
             ),
@@ -56,13 +56,13 @@ class Aplicativo extends StatelessWidget {
               letterSpacing: -0.2,
               color: escuroHighlight,
             ),
-            headlineLarge: GoogleFonts.raleway(
+            displayMedium: GoogleFonts.raleway(
               fontWeight: FontWeight.bold,
               letterSpacing: -0.2,
               color: escuroHighlight,
             ),
-            bodyLarge: GoogleFonts.raleway(
-              fontWeight: FontWeight.w600,
+            headlineMedium: GoogleFonts.raleway(
+              fontWeight: FontWeight.w500,
               letterSpacing: -0.2,
               color: escuroHighlight,
             ),

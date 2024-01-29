@@ -13,19 +13,18 @@ class TextoIntroducao extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          TypeWriterText(
-            text: Text("Olá, meu nome é Jean",
-                style: Theme.of(context).textTheme.headlineLarge,
+          TypeWriterText.builder(
+            "Olá, meu nome é Jean",
+            builder: (context, value) => SelectableText(value,
+                style: Theme.of(context).textTheme.displayMedium,
                 textAlign: TextAlign.center),
             duration: const Duration(milliseconds: 50),
           ),
-          Text(
-            'e eu sou um desenvolvedor mobile.',
+          SelectableText(
+            'e eu sou desenvolvedor mobile.',
             textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.bodyLarge,
-          )
-              .animate(delay: 2.seconds)
-              .fadeIn(curve: Curves.easeInCubic),
+            style: Theme.of(context).textTheme.headlineMedium,
+          ).animate(delay: 2.5.seconds).fadeIn(curve: Curves.easeInCubic),
         ],
       ),
     );
