@@ -24,8 +24,10 @@
         ".flutter-plugins": true,
         "LICENSE": true,
         "CONTRIBUTING.md": true,
-        "web": true,
-        "build": true
+        ".github/workflows": true,
+        ".github": true,
+        "build": true,
+        "web": true
     },
     "hide-files.files": [
         ".dart_tool",
@@ -46,7 +48,9 @@
         ".flutter-plugins",
         "LICENSE",
         "CONTRIBUTING.md",
-        "web",
-        "build"
+        ".github/workflows",
+        ".github",
+        "build",
+        "web"
     ]
 }

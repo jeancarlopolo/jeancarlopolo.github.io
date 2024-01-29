@@ -1,5 +1,5 @@
-import 'package:curriculo/src/stores/tema_atual.dart';
-import 'package:curriculo/src/widgets/botao_tema.dart';
+import 'package:meu_portfolio/src/stores/tema_atual.dart';
+import 'package:meu_portfolio/src/widgets/botao_tema.dart';
 
 import 'package:flutter/material.dart';
 

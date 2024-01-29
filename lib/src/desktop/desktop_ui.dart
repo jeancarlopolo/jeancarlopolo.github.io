@@ -1,13 +1,13 @@
-import 'package:curriculo/src/desktop/pages/contato.dart';
-import 'package:curriculo/src/desktop/pages/experiencia.dart';
-import 'package:curriculo/src/desktop/pages/formacao.dart';
-import 'package:curriculo/src/desktop/pages/projetos.dart';
-import 'package:curriculo/src/desktop/pages/sobre.dart';
-import 'package:curriculo/src/stores/gnav_tab_atual.dart';
-import 'package:curriculo/src/widgets/barra_tabs.dart';
-import 'package:curriculo/src/stores/tema_atual.dart';
-import 'package:curriculo/src/widgets/botao_tema.dart';
-import 'package:curriculo/src/widgets/gnav_buttons.dart';
+import 'package:meu_portfolio/src/desktop/pages/contato.dart';
+import 'package:meu_portfolio/src/desktop/pages/experiencia.dart';
+import 'package:meu_portfolio/src/desktop/pages/formacao.dart';
+import 'package:meu_portfolio/src/desktop/pages/projetos.dart';
+import 'package:meu_portfolio/src/desktop/pages/sobre.dart';
+import 'package:meu_portfolio/src/stores/gnav_tab_atual.dart';
+import 'package:meu_portfolio/src/widgets/barra_tabs.dart';
+import 'package:meu_portfolio/src/stores/tema_atual.dart';
+import 'package:meu_portfolio/src/widgets/botao_tema.dart';
+import 'package:meu_portfolio/src/widgets/gnav_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 

@@ -1,6 +1,6 @@
-import 'package:curriculo/src/constants.dart';
-import 'package:curriculo/src/interface_responsiva.dart';
-import 'package:curriculo/src/stores/tema_atual.dart';
+import 'package:meu_portfolio/src/constants.dart';
+import 'package:meu_portfolio/src/interface_responsiva.dart';
+import 'package:meu_portfolio/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:lottie/lottie.dart';

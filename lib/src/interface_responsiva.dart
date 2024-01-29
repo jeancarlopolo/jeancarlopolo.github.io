@@ -1,6 +1,6 @@
-import 'package:curriculo/src/desktop/desktop_ui.dart';
-import 'package:curriculo/src/mobile/mobile_ui.dart';
-import 'package:curriculo/src/stores/tema_atual.dart';
+import 'package:meu_portfolio/src/desktop/desktop_ui.dart';
+import 'package:meu_portfolio/src/mobile/mobile_ui.dart';
+import 'package:meu_portfolio/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 
 class InterfaceResponsiva extends StatelessWidget {

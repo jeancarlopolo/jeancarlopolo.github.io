@@ -1,6 +1,6 @@
-import 'package:curriculo/src/constants.dart';
-import 'package:curriculo/src/stores/animacao_botao_tema.dart';
-import 'package:curriculo/src/stores/tema_atual.dart';
+import 'package:meu_portfolio/src/constants.dart';
+import 'package:meu_portfolio/src/stores/animacao_botao_tema.dart';
+import 'package:meu_portfolio/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
@@ -52,7 +52,6 @@ class _BotaoTemaState extends State<BotaoTema>
                   animacaoStore.controller = AnimationController(
                     vsync: this,
                     duration: const Duration(milliseconds: 500),
-                    reverseDuration: const Duration(milliseconds: 500),
                     animationBehavior: AnimationBehavior.preserve,
                     lowerBound: inicioAnimacaoBotaoTema,
                     upperBound: fimAnimacaoBotaoTema,

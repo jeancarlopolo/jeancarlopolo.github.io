@@ -1,4 +1,4 @@
-import 'package:curriculo/src/stores/gnav_tab_atual.dart';
+import 'package:meu_portfolio/src/stores/gnav_tab_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -35,6 +35,8 @@ class BarraTabs extends StatelessWidget implements PreferredSizeWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             tabs: tabs,
             padding: const EdgeInsets.all(5),
+            duration: Durations.long4,
+            tabBorderRadius: 15,
           ),
         ),
       ),

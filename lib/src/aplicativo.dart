@@ -1,7 +1,7 @@
-import 'package:curriculo/src/constants.dart';
-import 'package:curriculo/src/interface_responsiva.dart';
-//import 'package:curriculo/src/minha_splash.dart';
-import 'package:curriculo/src/stores/tema_atual.dart';
+import 'package:meu_portfolio/src/constants.dart';
+//import 'package:meu_portfolio/src/interface_responsiva.dart';
+import 'package:meu_portfolio/src/minha_splash.dart';
+import 'package:meu_portfolio/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -26,13 +26,20 @@ class Aplicativo extends StatelessWidget {
           ),
           textTheme: TextTheme(
             labelLarge: GoogleFonts.raleway(
-                fontWeight: FontWeight.bold,
-                letterSpacing: -0.2,
-                color: claroHighlight),
+              fontWeight: FontWeight.bold,
+              letterSpacing: -0.2,
+              color: claroHighlight,
+            ),
             headlineLarge: GoogleFonts.raleway(
-                fontWeight: FontWeight.bold,
-                letterSpacing: -0.2,
-                color: claroHighlight),
+              fontWeight: FontWeight.bold,
+              letterSpacing: -0.2,
+              color: claroHighlight,
+            ),
+            bodyLarge: GoogleFonts.raleway(
+              fontWeight: FontWeight.w600,
+              letterSpacing: -0.2,
+              color: claroHighlight,
+            ),
           ),
           useMaterial3: true,
         ),
@@ -45,20 +52,27 @@ class Aplicativo extends StatelessWidget {
           ),
           textTheme: TextTheme(
             labelLarge: GoogleFonts.raleway(
-                fontWeight: FontWeight.bold,
-                letterSpacing: -0.2,
-                color: escuroHighlight),
+              fontWeight: FontWeight.bold,
+              letterSpacing: -0.2,
+              color: escuroHighlight,
+            ),
             headlineLarge: GoogleFonts.raleway(
-                fontWeight: FontWeight.bold,
-                letterSpacing: -0.2,
-                color: escuroHighlight),
+              fontWeight: FontWeight.bold,
+              letterSpacing: -0.2,
+              color: escuroHighlight,
+            ),
+            bodyLarge: GoogleFonts.raleway(
+              fontWeight: FontWeight.w600,
+              letterSpacing: -0.2,
+              color: escuroHighlight,
+            ),
           ),
           useMaterial3: true,
         ),
         themeAnimationCurve: Curves.easeOut,
         themeMode: temaStore.atual,
-        home: InterfaceResponsiva(temaStore: temaStore),
-        //home: MinhaSplash(temaStore: temaStore),
+        //home: InterfaceResponsiva(temaStore: temaStore),
+        home: MinhaSplash(temaStore: temaStore),
       ),
     );
   }

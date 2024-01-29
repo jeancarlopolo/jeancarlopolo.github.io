@@ -1,6 +1,7 @@
-import 'package:curriculo/src/stores/tema_atual.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:meu_portfolio/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
-import 'package:typewritertext/typewritertext.dart';
+import 'package:meu_portfolio/src/widgets/texto_introducao.dart';
 
 class SobrePage extends StatelessWidget {
   const SobrePage({super.key, required this.temaStore});
@@ -9,26 +10,31 @@ class SobrePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(50.0),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          TypeWriterText(
-            text: Text("Olá, eu sou o Jean",
-                style: Theme.of(context).textTheme.headlineLarge),
-            duration: const Duration(milliseconds: 50),
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        const TextoIntroducao(),
+        Flexible(
+          flex: 2,
+          child: Padding(
+            padding: const EdgeInsets.all(8),
+            child: Image.asset(
+              'assets/foto_jean.png',
+            )
+                .animate()
+                .slideX(
+                    begin: 5,
+                    end: 0,
+                    curve: Curves.easeOutCubic,
+                    duration: const Duration(seconds: 3))
+                .fadeIn(
+                    delay: const Duration(milliseconds: 2500),
+                    duration: const Duration(seconds: 2)),
           ),
-          AspectRatio(
-            aspectRatio: 3 / 4,
-            child: Container(
-              color: Colors.red,
-              width: 500,
-            ),
-          )
-        ],
-      ),
+        )
+      ],
     );
   }
 }
+
