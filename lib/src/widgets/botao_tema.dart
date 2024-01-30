@@ -24,7 +24,7 @@ class _BotaoTemaState extends State<BotaoTema>
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        if (animacaoStore.controller!.value == fimAnimacaoBotaoTema ||
+        if (animacaoStore.controller!.value == Constantes.fimAnimacaoBotaoTema ||
             animacaoStore.controller!.velocity > 0) {
           animacaoStore.ficarClaro();
         } else {
@@ -40,10 +40,10 @@ class _BotaoTemaState extends State<BotaoTema>
             height: widget.height,
             width: widget.height,
             child: OverflowBox(
-              minHeight: widget.height * coeficienteBotao,
-              minWidth: widget.height * coeficienteBotao,
-              maxWidth: widget.height * coeficienteBotao,
-              maxHeight: widget.height * coeficienteBotao,
+              minHeight: widget.height * Constantes.coeficienteBotao,
+              minWidth: widget.height * Constantes.coeficienteBotao,
+              maxWidth: widget.height * Constantes.coeficienteBotao,
+              maxHeight: widget.height * Constantes.coeficienteBotao,
               child: Lottie.asset(
                 'assets/botao_tema.json',
                 fit: BoxFit.fill,
@@ -53,11 +53,11 @@ class _BotaoTemaState extends State<BotaoTema>
                     vsync: this,
                     duration: const Duration(milliseconds: 500),
                     animationBehavior: AnimationBehavior.preserve,
-                    lowerBound: inicioAnimacaoBotaoTema,
-                    upperBound: fimAnimacaoBotaoTema,
+                    lowerBound: Constantes.inicioAnimacaoBotaoTema,
+                    upperBound: Constantes.fimAnimacaoBotaoTema,
                     value: widget.temaStore.atual == ThemeMode.light
-                        ? fimAnimacaoBotaoTema
-                        : inicioAnimacaoBotaoTema,
+                        ? Constantes.fimAnimacaoBotaoTema
+                        : Constantes.inicioAnimacaoBotaoTema,
                   );
                 },
               ),

@@ -19,7 +19,7 @@ class MinhaSplash extends StatelessWidget {
         frameRate: const FrameRate(60),
       ),
       nextScreen: InterfaceResponsiva(temaStore: temaStore),
-      backgroundColor: claroBackground,
+      backgroundColor: Constantes.claroBackground,
       centered: true,
       pageTransitionType: PageTransitionType.fade,
       animationDuration: Duration.zero,
