@@ -23,7 +23,7 @@ class TextoIntroducao extends StatelessWidget {
             'e eu sou desenvolvedor mobile.',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.headlineMedium,
-          ).animate(delay: 2.5.seconds).fadeIn(curve: Curves.easeInCubic),
+          ).animate(delay: 2.seconds).fadeIn(curve: Curves.easeInCubic),
         ],
       ),
     );

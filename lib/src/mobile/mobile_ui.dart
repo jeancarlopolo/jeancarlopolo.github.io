@@ -1,5 +1,4 @@
 import 'package:meu_portfolio/src/stores/tema_atual.dart';
-import 'package:meu_portfolio/src/widgets/botao_tema.dart';
 
 import 'package:flutter/material.dart';
 
@@ -14,10 +13,8 @@ class MobileUI extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Mobile'),
       ),
-      body: Center(
-        child: BotaoTema(
-          temaStore: temaStore,
-        ),
+      body: const Center(
+        child: Text('em construção!'),
       ),
     );
   }

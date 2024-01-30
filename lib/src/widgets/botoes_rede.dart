@@ -25,14 +25,15 @@ class BotoesRede extends StatelessWidget {
             child: botoes[index]
                 .animate()
                 .moveX(
-                    begin: -10,
+                    begin: (-30 * (botoes.length + 1 - index)).toDouble(),
                     end: 0,
                     curve: Curves.easeOutCubic,
                     duration: 1.seconds,
                     delay: (index + 3).seconds)
                 .fadeIn(
                     duration: 1.seconds,
-                    delay: (index * 0.7 + 3.5).seconds),
+                    curve: Curves.easeOutCubic,
+                    delay: (index * 0.75 + 3.5).seconds),
           );
         },
       ),

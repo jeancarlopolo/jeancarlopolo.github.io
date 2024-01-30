@@ -8,6 +8,6 @@ GButton criarGButton({required icon, required text, required context}) {
     textStyle: Theme.of(context).textTheme.labelLarge,
     text: text,
     iconColor: Theme.of(context).colorScheme.onBackground.withOpacity(0.5),
-    duration: Durations.long4,
+    duration: Durations.medium4,
   );
 }

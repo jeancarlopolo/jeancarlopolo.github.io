@@ -35,7 +35,7 @@ class BarraTabs extends StatelessWidget implements PreferredSizeWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             tabs: tabs,
             padding: const EdgeInsets.all(5),
-            duration: Durations.long4,
+            duration: Durations.medium4,
             tabBorderRadius: 15,
           ),
         ),

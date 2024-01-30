@@ -71,6 +71,7 @@ class DesktopUI extends StatelessWidget {
           ),
         ),
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Expanded(child: pages[tabStore.tabAtual]),
             TextoInferior()
