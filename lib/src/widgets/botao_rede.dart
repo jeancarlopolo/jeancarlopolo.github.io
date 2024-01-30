@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:universal_html/html.dart';
 
 class BotaoRede extends StatelessWidget {
   const BotaoRede(
@@ -15,12 +15,9 @@ class BotaoRede extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final uri = Uri.parse(url);
     return GestureDetector(
       onTap: () async {
-        if (!await launchUrl(uri)) {
-          throw Exception('Could not launch $uri');
-        }
+        window.open(url, 'Rede Social');
       },
       child: Container(
         height: height,

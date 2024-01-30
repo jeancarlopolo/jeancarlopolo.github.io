@@ -24,7 +24,10 @@ class Aplicativo extends StatelessWidget {
             onBackground: claroHighlight,
             secondary: claroHighlight,
           ),
-          textSelectionTheme: TextSelectionThemeData(cursorColor: claroBackground, selectionColor: claroHighlight.withOpacity(0.5), selectionHandleColor: claroHighlight),
+          textSelectionTheme: TextSelectionThemeData(
+              cursorColor: claroBackground,
+              selectionColor: claroHighlight.withOpacity(0.5),
+              selectionHandleColor: claroHighlight),
           textTheme: TextTheme(
             labelLarge: GoogleFonts.raleway(
               fontWeight: FontWeight.bold,
@@ -41,11 +44,19 @@ class Aplicativo extends StatelessWidget {
               letterSpacing: -0.2,
               color: claroHighlight,
             ),
+            bodyMedium: GoogleFonts.raleway(
+              fontWeight: FontWeight.w500,
+              letterSpacing: 0,
+              color: claroHighlight,
+            ),
           ),
           useMaterial3: true,
         ),
         darkTheme: ThemeData(
-          textSelectionTheme: TextSelectionThemeData(cursorColor: escuroBackground, selectionColor: escuroHighlight.withOpacity(0.5), selectionHandleColor: escuroHighlight),
+          textSelectionTheme: TextSelectionThemeData(
+              cursorColor: escuroBackground,
+              selectionColor: escuroHighlight.withOpacity(0.5),
+              selectionHandleColor: escuroHighlight),
           colorScheme: const ColorScheme.dark(
             primary: escuroBackground,
             background: escuroBackground,
@@ -66,6 +77,11 @@ class Aplicativo extends StatelessWidget {
             headlineMedium: GoogleFonts.raleway(
               fontWeight: FontWeight.w500,
               letterSpacing: -0.2,
+              color: escuroHighlight,
+            ),
+            bodyMedium: GoogleFonts.raleway(
+              fontWeight: FontWeight.w500,
+              letterSpacing: 0,
               color: escuroHighlight,
             ),
           ),

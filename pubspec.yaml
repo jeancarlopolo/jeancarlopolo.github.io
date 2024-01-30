@@ -43,7 +43,7 @@ dependencies:
   mobx_codegen: ^2.6.0+1
   page_transition: ^2.1.0
   typewritertext: ^2.3.1
-  url_launcher: ^6.2.4
+  universal_html: ^2.2.4
 
 dev_dependencies:
   flutter_lints: ^3.0.1

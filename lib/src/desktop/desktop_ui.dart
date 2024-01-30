@@ -10,6 +10,7 @@ import 'package:meu_portfolio/src/widgets/botao_tema.dart';
 import 'package:meu_portfolio/src/widgets/gnav_buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
+import 'package:meu_portfolio/src/widgets/texto_inferior.dart';
 
 class DesktopUI extends StatelessWidget {
   const DesktopUI({super.key, required this.temaStore});
@@ -29,7 +30,6 @@ class DesktopUI extends StatelessWidget {
     ];
     return Observer(
       builder: (context) => Scaffold(
-        
         appBar: BarraTabs(
           tabs: [
             criarGButton(
@@ -70,8 +70,14 @@ class DesktopUI extends StatelessWidget {
             temaStore: temaStore,
           ),
         ),
-        body: pages[tabStore.tabAtual],
+        body: Column(
+          children: [
+            Expanded(child: pages[tabStore.tabAtual]),
+            TextoInferior()
+          ],
+        ),
       ),
     );
   }
 }
+
