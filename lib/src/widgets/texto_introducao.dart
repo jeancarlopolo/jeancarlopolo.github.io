@@ -17,13 +17,13 @@ class TextoIntroducao extends StatelessWidget {
             text: Text('Olá, meu nome é Jean',
                 style: Theme.of(context).textTheme.displayMedium,
                 textAlign: TextAlign.center),
-            duration: const Duration(milliseconds: 50),
+            duration: 50.milliseconds,
           ),
           Text(
             'e eu sou desenvolvedor mobile.',
             textAlign: TextAlign.center,
             style: Theme.of(context).textTheme.headlineMedium,
-          ).animate(delay: 2.seconds).fadeIn(curve: Curves.easeInCubic),
+          ).animate().fadeIn(curve: Curves.easeInCubic, delay: 2.seconds),
         ],
       ),
     );
