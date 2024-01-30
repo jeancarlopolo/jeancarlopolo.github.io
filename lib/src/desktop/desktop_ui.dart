@@ -29,6 +29,7 @@ class DesktopUI extends StatelessWidget {
     ];
     return Observer(
       builder: (context) => Scaffold(
+        
         appBar: BarraTabs(
           tabs: [
             criarGButton(

@@ -13,14 +13,16 @@ class InterfaceResponsiva extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth < 600) {
-          return MobileUI(temaStore: temaStore);
-        } else {
-          return DesktopUI(temaStore: temaStore);
-        }
-      },
+    return SelectionArea( //agora todo texto é selecionável
+      child: LayoutBuilder(
+        builder: (context, constraints) {
+          if (constraints.maxWidth < 600) {
+            return MobileUI(temaStore: temaStore);
+          } else {
+            return DesktopUI(temaStore: temaStore);
+          }
+        },
+      ),
     );
   }
 }

@@ -17,13 +17,14 @@ class Aplicativo extends StatelessWidget {
       builder: (_) => MaterialApp(
         title: 'Jean Carlo Polo',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData.from(
+        theme: ThemeData(
           colorScheme: const ColorScheme.light(
             primary: claroBackground,
             background: claroBackground,
             onBackground: claroHighlight,
             secondary: claroHighlight,
           ),
+          textSelectionTheme: TextSelectionThemeData(cursorColor: claroBackground, selectionColor: claroHighlight.withOpacity(0.5), selectionHandleColor: claroHighlight),
           textTheme: TextTheme(
             labelLarge: GoogleFonts.raleway(
               fontWeight: FontWeight.bold,
@@ -43,7 +44,8 @@ class Aplicativo extends StatelessWidget {
           ),
           useMaterial3: true,
         ),
-        darkTheme: ThemeData.from(
+        darkTheme: ThemeData(
+          textSelectionTheme: TextSelectionThemeData(cursorColor: escuroBackground, selectionColor: escuroHighlight.withOpacity(0.5), selectionHandleColor: escuroHighlight),
           colorScheme: const ColorScheme.dark(
             primary: escuroBackground,
             background: escuroBackground,
