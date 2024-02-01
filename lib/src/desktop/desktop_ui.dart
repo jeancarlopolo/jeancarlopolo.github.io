@@ -7,7 +7,7 @@ import 'package:meu_portfolio/src/stores/gnav_tab_atual.dart';
 import 'package:meu_portfolio/src/widgets/barra_tabs.dart';
 import 'package:meu_portfolio/src/stores/tema_atual.dart';
 import 'package:meu_portfolio/src/widgets/botao_tema.dart';
-import 'package:meu_portfolio/src/widgets/gnav_buttons.dart';
+import 'package:meu_portfolio/src/widgets/botoes_tabs.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:meu_portfolio/src/widgets/texto_inferior.dart';

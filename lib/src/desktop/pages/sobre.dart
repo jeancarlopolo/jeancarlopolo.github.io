@@ -38,7 +38,10 @@ class SobrePage extends StatelessWidget {
           ),
         ),
         Expanded(
-          child: MinhaFoto(),
+          child: Padding(
+            padding: EdgeInsets.symmetric(vertical: 100, horizontal: 25),
+            child: MinhaFoto(),
+          ),
         )
       ],
     );

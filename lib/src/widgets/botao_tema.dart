@@ -1,3 +1,4 @@
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:meu_portfolio/src/constants.dart';
 import 'package:meu_portfolio/src/stores/animacao_botao_tema.dart';
 import 'package:meu_portfolio/src/stores/tema_atual.dart';
@@ -46,13 +47,14 @@ class _BotaoTemaState extends State<BotaoTema>
               maxHeight: widget.height * Constantes.coeficienteBotao,
               child: Lottie.asset(
                 'assets/botao_tema.json',
+                frameRate: FrameRate.composition,
                 fit: BoxFit.fill,
                 controller: animacaoStore.controller,
                 onLoaded: (composicao) {
                   animacaoStore.controller = AnimationController(
                     vsync: this,
-                    duration: const Duration(milliseconds: 500),
                     animationBehavior: AnimationBehavior.preserve,
+                    duration: 0.5.seconds,
                     lowerBound: Constantes.inicioAnimacaoBotaoTema,
                     upperBound: Constantes.fimAnimacaoBotaoTema,
                     value: widget.temaStore.atual == ThemeMode.light
