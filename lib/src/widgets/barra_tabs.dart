@@ -30,7 +30,6 @@ class BarraTabs extends StatelessWidget implements PreferredSizeWidget {
             backgroundColor: Colors.transparent,
             gap: 4,
             onTabChange: onTabChange,
-            //ontabchange vai ser pra navegar
             style: GnavStyle.google,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             tabs: tabs,
