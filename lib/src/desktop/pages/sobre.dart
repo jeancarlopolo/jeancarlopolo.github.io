@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:meu_portfolio/src/widgets/botao_rede.dart';
-import 'package:meu_portfolio/src/widgets/botoes_rede.dart';
-import 'package:meu_portfolio/src/widgets/minha_foto.dart';
-import 'package:meu_portfolio/src/widgets/texto_introducao.dart';
+import 'package:meu_portfolio/src/widgets/sobre/botao_rede.dart';
+import 'package:meu_portfolio/src/widgets/sobre/botoes_rede.dart';
+import 'package:meu_portfolio/src/widgets/sobre/minha_foto.dart';
+import 'package:meu_portfolio/src/widgets/sobre/texto_introducao.dart';
 
 class SobrePage extends StatelessWidget {
   const SobrePage({super.key});

@@ -5,11 +5,11 @@ import 'package:meu_portfolio/src/desktop/pages/formacao.dart';
 import 'package:meu_portfolio/src/desktop/pages/projetos.dart';
 import 'package:meu_portfolio/src/desktop/pages/sobre.dart';
 import 'package:meu_portfolio/src/services/gnav_tab_atual.dart';
-import 'package:meu_portfolio/src/widgets/barra_tabs.dart';
-import 'package:meu_portfolio/src/widgets/botao_tema.dart';
-import 'package:meu_portfolio/src/widgets/botoes_tabs.dart';
+import 'package:meu_portfolio/src/widgets/interface/barra_tabs.dart';
+import 'package:meu_portfolio/src/widgets/interface/botao_tema.dart';
+import 'package:meu_portfolio/src/widgets/interface/botoes_tabs.dart';
 import 'package:flutter/material.dart';
-import 'package:meu_portfolio/src/widgets/texto_inferior.dart';
+import 'package:meu_portfolio/src/widgets/interface/texto_inferior.dart';
 
 class DesktopUI extends StatelessWidget {
   const DesktopUI({super.key});
@@ -61,9 +61,7 @@ class DesktopUI extends StatelessWidget {
       ),
       floatingActionButton: const Padding(
         padding: EdgeInsets.all(10.0),
-        child: BotaoTema(
-          height: 60,
-        ),
+        child: BotaoTema(height: 60),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

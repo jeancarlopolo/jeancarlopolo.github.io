@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:meu_portfolio/src/widgets/botao_rede.dart';
+import 'package:meu_portfolio/src/widgets/sobre/botao_rede.dart';
 
 class BotoesRede extends StatelessWidget {
   const BotoesRede({
