@@ -71,7 +71,7 @@ class DesktopUI extends StatelessWidget {
           Expanded(
             child: PageView(
               controller: tabController.controller,
-              onPageChanged: (value) => !tabController.estaMovendo.value
+              onPageChanged: (value) => !tabController.estaMovendo
                   ? tabController.tabAtual.value = value
                   : null, // mudar a página muda o botão
               children: pages,
