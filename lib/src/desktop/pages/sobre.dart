@@ -1,4 +1,3 @@
-import 'package:meu_portfolio/src/stores/tema_atual.dart';
 import 'package:flutter/material.dart';
 import 'package:meu_portfolio/src/widgets/botao_rede.dart';
 import 'package:meu_portfolio/src/widgets/botoes_rede.dart';
@@ -6,9 +5,8 @@ import 'package:meu_portfolio/src/widgets/minha_foto.dart';
 import 'package:meu_portfolio/src/widgets/texto_introducao.dart';
 
 class SobrePage extends StatelessWidget {
-  const SobrePage({super.key, required this.temaStore});
+  const SobrePage({super.key});
 
-  final TemaStore temaStore;
 
   static const botoes = [
     BotaoRede(

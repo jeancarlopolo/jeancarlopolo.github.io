@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:meu_portfolio/src/constants.dart';
+import 'package:meu_portfolio/src/app/constants.dart';
 
-class Temas {
+final class Temas {
   static final claro = ThemeData(
     colorScheme: const ColorScheme.light(
       primary: Constantes.claroBackground,

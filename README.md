@@ -7,13 +7,23 @@
 O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas nas seguintes tarefas:
 
 - [x] Botão de mudar o tema
-- [ ] Páginas para cada parte do portfólio (educação, experiência, currículo, competências)
-    - [ ] Versão mobile
-    - [ ] Versão desktop
 - [x] Interface responsiva
-- [x] Carregamento -- READICIONAR CARREGAMENTO CASO NECESSÁRIO
-- [ ] Contato
-- [ ] Gerenciamento de estado em MobX
+- [x] Carregamento
+- [ ] Desktop
+    - [ ] Contato
+    - [x] Sobre
+    - [ ] Projetos
+    - [ ] Experiência
+    - [ ] Formação
+- [ ] Mobile
+    - [ ] Contato
+    - [ ] Sobre
+    - [ ] Projetos
+    - [ ] Experiência
+    - [ ] Formação
+
+- [x] Gerenciamento de estado com Flutter Signals
+- [x] Injeção de dependência com GetIt
 
 ## 📫 Contribuindo
 
