@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
-class Lugar extends StatelessWidget {
-  const Lugar(
-      {super.key,
-      required this.nome,
-      required this.descricao,
-      required this.inicio,
-      this.fim,
-      required this.imagem,
-      this.altura,
-      this.largura});
+class LugarEducacao extends StatelessWidget {
+  const LugarEducacao({
+    super.key,
+    required this.nome,
+    required this.descricao,
+    required this.inicio,
+    this.fim,
+    required this.imagem,
+    this.altura,
+    this.largura,
+  });
 
   final String nome, descricao;
   final double? altura, largura;
