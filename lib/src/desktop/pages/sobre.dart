@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:meu_portfolio/src/widgets/sobre/botao_rede.dart';
 import 'package:meu_portfolio/src/widgets/sobre/botoes_rede.dart';
 import 'package:meu_portfolio/src/widgets/sobre/minha_foto.dart';
@@ -10,11 +11,11 @@ class SobrePage extends StatelessWidget {
 
   static const botoes = [
     BotaoRede(
-      icone: 'assets/icone_linkedin.svg',
+      icone: Bootstrap.linkedin,
       url: 'https://www.linkedin.com/in/jean-carlo-dev/',
     ),
     BotaoRede(
-      icone: 'assets/icone_github.svg',
+      icone: Bootstrap.github,
       url: 'https://github.com/jeancarlopolo',
     ),
   ];

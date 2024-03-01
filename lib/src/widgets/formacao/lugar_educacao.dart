@@ -16,7 +16,8 @@ class LugarEducacao extends StatelessWidget {
   final double? altura, largura;
   final DateTime inicio;
   final DateTime? fim;
-  final Uri imagem;
+  final String imagem;
+  
   String get dataTotal => fim != null
       ? '${inicio.month}/${inicio.year} - ${fim!.month}/${fim!.year}'
       : '${inicio.month}/${inicio.year} - Presente';
@@ -30,7 +31,7 @@ class LugarEducacao extends StatelessWidget {
       child: Row(
         children: [
           Image.network(
-            imagem.toString(),
+            imagem,
             fit: BoxFit.contain,
           ),
           Column(

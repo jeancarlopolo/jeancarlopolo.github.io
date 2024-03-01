@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:universal_html/html.dart';
 
 class BotaoRede extends StatelessWidget {
@@ -10,7 +9,7 @@ class BotaoRede extends StatelessWidget {
       this.height,
       this.width});
   final String url;
-  final String icone;
+  final IconData icone;
   final double? height, width;
 
   @override
@@ -25,11 +24,10 @@ class BotaoRede extends StatelessWidget {
         alignment: Alignment.center,
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(8)),
         padding: const EdgeInsets.all(5),
-        child: SvgPicture.asset(
+        child: Icon(
           icone,
-          colorFilter: ColorFilter.mode(
-              Theme.of(context).colorScheme.onBackground, BlendMode.srcIn),
-          height: 40,
+          color: Theme.of(context).colorScheme.onBackground,
+          size: 40,
         ),
       ),
     );
