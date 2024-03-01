@@ -391,26 +391,26 @@ packages:
     dependency: "direct main"
     description:
       name: signals
-      sha256: "0945e5e2d1b90fc12b26be329c216f3e820f409b6dc46dbc363c97c5fe0f5c3e"
+      sha256: a411a60a180570d23446ed233bbf7330384188d446302a47c032f3c14e4fc6cb
       url: "https://pub.dev"
     source: hosted
-    version: "4.4.0"
+    version: "4.5.1"
   signals_core:
     dependency: transitive
     description:
       name: signals_core
-      sha256: "7455e0cfb70801c7f1e6872e65282f5194688d211b80281868932fd2dbe22667"
+      sha256: "29258212f4e89297e7a6abbc0a000fda934bfa6d8b5634c30ce31ec1033bf9e4"
       url: "https://pub.dev"
     source: hosted
-    version: "4.4.0"
+    version: "4.5.0"
   signals_flutter:
     dependency: "direct main"
     description:
       name: signals_flutter
-      sha256: "4872f8c4d104464fe487f4b1964f352178f7cfb5d76e4119b0a7dcd4df9a08a0"
+      sha256: dd4971b2a0165d1ef8de1a45d59e89cdcdd5fc1c8f7fa180d55e6d049be89e92
       url: "https://pub.dev"
     source: hosted
-    version: "4.4.0"
+    version: "4.5.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -476,10 +476,10 @@ packages:
     dependency: "direct main"
     description:
       name: typewritertext
-      sha256: d787ea210b4934f6bcb559018910a5d83e2eb2a5552ebf2549288f01cebc4ed3
+      sha256: b7989683e7abd7d3fb9f227a526dea665d464bc1c4f6386e32734173b6286ffe
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.1"
+    version: "3.0.2"
   universal_html:
     dependency: "direct main"
     description:
