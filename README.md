@@ -36,4 +36,4 @@ Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais
 ## 👨‍💻 Desenvolvido por
 
 Jean Carlo Polo
-[@jeancarlopolo](https://github.com/jeancarlopolo)
+[@jeancarlopolo](https://github.com/jeancarlopolo) 
